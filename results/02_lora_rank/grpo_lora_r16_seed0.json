@@ -1,0 +1,586 @@
+{
+  "config": {
+    "experiment": "02_lora_rank",
+    "name": "grpo_lora_r16_seed0",
+    "seed": 0,
+    "learning_rate": 0.0001,
+    "adapter": "lora",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_target_modules": "all-linear",
+    "prompt": "r1_zero_three_shot",
+    "baseline": "mean",
+    "advantage_normalizer": "std",
+    "loss_normalization": "sequence",
+    "rollout_steps": 40,
+    "questions_per_rollout": 16,
+    "group_size": 16,
+    "max_tokens": 128,
+    "n_val": 256,
+    "rollout_generation_batch_size": 4,
+    "evaluation_batch_size": 8,
+    "model": "Qwen/Qwen2.5-0.5B",
+    "physical_gpu": 1,
+    "trainable_parameters": 8798208,
+    "total_parameters": 502830976,
+    "trainable_fraction": 0.017497346861940342
+  },
+  "hardware": "NVIDIA GeForce RTX 4090",
+  "train": [
+    {
+      "rollout_step": 1,
+      "update": 1,
+      "loss": -0.045385099947452545,
+      "mean_reward": 0.22265625,
+      "mean_format_rewards": 0.578125,
+      "avg_rewards": 0.22265625,
+      "gradient_norm": 0.1615706831216812,
+      "token_entropy": 0.4821617305278778,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 2,
+      "update": 2,
+      "loss": -0.02486918866634369,
+      "mean_reward": 0.0859375,
+      "mean_format_rewards": 0.4609375,
+      "avg_rewards": 0.0859375,
+      "gradient_norm": 0.13054320216178894,
+      "token_entropy": 0.5393560528755188,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 3,
+      "update": 3,
+      "loss": -0.04742042347788811,
+      "mean_reward": 0.21875,
+      "mean_format_rewards": 0.62890625,
+      "avg_rewards": 0.21875,
+      "gradient_norm": 0.15560702979564667,
+      "token_entropy": 0.4401357173919678,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 4,
+      "update": 4,
+      "loss": -0.020542770624160767,
+      "mean_reward": 0.32421875,
+      "mean_format_rewards": 0.7890625,
+      "avg_rewards": 0.32421875,
+      "gradient_norm": 0.16192291676998138,
+      "token_entropy": 0.4021086096763611,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 5,
+      "update": 5,
+      "loss": -0.022996935993433,
+      "mean_reward": 0.296875,
+      "mean_format_rewards": 0.7890625,
+      "avg_rewards": 0.296875,
+      "gradient_norm": 0.17310065031051636,
+      "token_entropy": 0.35598307847976685,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 6,
+      "update": 6,
+      "loss": -0.017931591719388962,
+      "mean_reward": 0.171875,
+      "mean_format_rewards": 0.59375,
+      "avg_rewards": 0.171875,
+      "gradient_norm": 0.1390734612941742,
+      "token_entropy": 0.3285355567932129,
+      "active_fraction": 0.5
+    },
+    {
+      "rollout_step": 7,
+      "update": 7,
+      "loss": -0.009396160021424294,
+      "mean_reward": 0.3671875,
+      "mean_format_rewards": 0.66015625,
+      "avg_rewards": 0.3671875,
+      "gradient_norm": 0.13304100930690765,
+      "token_entropy": 0.2677440345287323,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 8,
+      "update": 8,
+      "loss": -0.01150808297097683,
+      "mean_reward": 0.3203125,
+      "mean_format_rewards": 0.7265625,
+      "avg_rewards": 0.3203125,
+      "gradient_norm": 0.14497902989387512,
+      "token_entropy": 0.22412537038326263,
+      "active_fraction": 0.5
+    },
+    {
+      "rollout_step": 9,
+      "update": 9,
+      "loss": -0.02320900373160839,
+      "mean_reward": 0.2734375,
+      "mean_format_rewards": 0.58203125,
+      "avg_rewards": 0.2734375,
+      "gradient_norm": 0.19850969314575195,
+      "token_entropy": 0.29616203904151917,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 10,
+      "update": 10,
+      "loss": -0.012337020598351955,
+      "mean_reward": 0.3125,
+      "mean_format_rewards": 0.5234375,
+      "avg_rewards": 0.3125,
+      "gradient_norm": 0.19760987162590027,
+      "token_entropy": 0.25219419598579407,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 11,
+      "update": 11,
+      "loss": -0.028852980583906174,
+      "mean_reward": 0.3984375,
+      "mean_format_rewards": 0.59375,
+      "avg_rewards": 0.3984375,
+      "gradient_norm": 0.17473731935024261,
+      "token_entropy": 0.22392058372497559,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 12,
+      "update": 12,
+      "loss": -0.012068327516317368,
+      "mean_reward": 0.359375,
+      "mean_format_rewards": 0.58203125,
+      "avg_rewards": 0.359375,
+      "gradient_norm": 0.1799561232328415,
+      "token_entropy": 0.20217236876487732,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 13,
+      "update": 13,
+      "loss": -0.020092595368623734,
+      "mean_reward": 0.5,
+      "mean_format_rewards": 0.75390625,
+      "avg_rewards": 0.5,
+      "gradient_norm": 0.21107466518878937,
+      "token_entropy": 0.1963558793067932,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 14,
+      "update": 14,
+      "loss": -0.008792011067271233,
+      "mean_reward": 0.33984375,
+      "mean_format_rewards": 0.6484375,
+      "avg_rewards": 0.33984375,
+      "gradient_norm": 0.24360428750514984,
+      "token_entropy": 0.22131028771400452,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 15,
+      "update": 15,
+      "loss": -0.010184851475059986,
+      "mean_reward": 0.4765625,
+      "mean_format_rewards": 0.828125,
+      "avg_rewards": 0.4765625,
+      "gradient_norm": 0.25542300939559937,
+      "token_entropy": 0.2422608733177185,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 16,
+      "update": 16,
+      "loss": -0.014726195484399796,
+      "mean_reward": 0.421875,
+      "mean_format_rewards": 0.6953125,
+      "avg_rewards": 0.421875,
+      "gradient_norm": 0.24066457152366638,
+      "token_entropy": 0.18132463097572327,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 17,
+      "update": 17,
+      "loss": -0.01148501131683588,
+      "mean_reward": 0.30859375,
+      "mean_format_rewards": 0.69921875,
+      "avg_rewards": 0.30859375,
+      "gradient_norm": 0.26277682185173035,
+      "token_entropy": 0.17129331827163696,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 18,
+      "update": 18,
+      "loss": -0.008032507263123989,
+      "mean_reward": 0.3671875,
+      "mean_format_rewards": 0.7578125,
+      "avg_rewards": 0.3671875,
+      "gradient_norm": 0.26123982667922974,
+      "token_entropy": 0.14982354640960693,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 19,
+      "update": 19,
+      "loss": -0.010281411930918694,
+      "mean_reward": 0.49609375,
+      "mean_format_rewards": 0.78515625,
+      "avg_rewards": 0.49609375,
+      "gradient_norm": 0.3026750087738037,
+      "token_entropy": 0.12913048267364502,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 20,
+      "update": 20,
+      "loss": -0.01250628661364317,
+      "mean_reward": 0.46875,
+      "mean_format_rewards": 0.76953125,
+      "avg_rewards": 0.46875,
+      "gradient_norm": 0.3095180094242096,
+      "token_entropy": 0.13992756605148315,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 21,
+      "update": 21,
+      "loss": -0.02001579850912094,
+      "mean_reward": 0.66015625,
+      "mean_format_rewards": 0.88671875,
+      "avg_rewards": 0.66015625,
+      "gradient_norm": 0.2904506027698517,
+      "token_entropy": 0.1369556486606598,
+      "active_fraction": 0.875
+    },
+    {
+      "rollout_step": 22,
+      "update": 22,
+      "loss": -0.010018336586654186,
+      "mean_reward": 0.5,
+      "mean_format_rewards": 0.78125,
+      "avg_rewards": 0.5,
+      "gradient_norm": 0.26418182253837585,
+      "token_entropy": 0.13857501745224,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 23,
+      "update": 23,
+      "loss": -0.009740913286805153,
+      "mean_reward": 0.421875,
+      "mean_format_rewards": 0.69140625,
+      "avg_rewards": 0.421875,
+      "gradient_norm": 0.22794172167778015,
+      "token_entropy": 0.147370845079422,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 24,
+      "update": 24,
+      "loss": -0.009888658300042152,
+      "mean_reward": 0.3671875,
+      "mean_format_rewards": 0.828125,
+      "avg_rewards": 0.3671875,
+      "gradient_norm": 0.26382049918174744,
+      "token_entropy": 0.1509498804807663,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 25,
+      "update": 25,
+      "loss": -0.009952583350241184,
+      "mean_reward": 0.41796875,
+      "mean_format_rewards": 0.8671875,
+      "avg_rewards": 0.41796875,
+      "gradient_norm": 0.29440319538116455,
+      "token_entropy": 0.132372185587883,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 26,
+      "update": 26,
+      "loss": 0.0030585527420043945,
+      "mean_reward": 0.23046875,
+      "mean_format_rewards": 0.7109375,
+      "avg_rewards": 0.23046875,
+      "gradient_norm": 0.282211035490036,
+      "token_entropy": 0.1140461340546608,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 27,
+      "update": 27,
+      "loss": -0.006889543496072292,
+      "mean_reward": 0.51953125,
+      "mean_format_rewards": 0.75390625,
+      "avg_rewards": 0.51953125,
+      "gradient_norm": 0.2819470167160034,
+      "token_entropy": 0.11259172856807709,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 28,
+      "update": 28,
+      "loss": -0.0017171991057693958,
+      "mean_reward": 0.3203125,
+      "mean_format_rewards": 0.83203125,
+      "avg_rewards": 0.3203125,
+      "gradient_norm": 0.23078499734401703,
+      "token_entropy": 0.11832777410745621,
+      "active_fraction": 0.5
+    },
+    {
+      "rollout_step": 29,
+      "update": 29,
+      "loss": -0.008842317387461662,
+      "mean_reward": 0.36328125,
+      "mean_format_rewards": 0.87109375,
+      "avg_rewards": 0.36328125,
+      "gradient_norm": 0.2932349741458893,
+      "token_entropy": 0.12528714537620544,
+      "active_fraction": 0.4375
+    },
+    {
+      "rollout_step": 30,
+      "update": 30,
+      "loss": 0.0010142672108486295,
+      "mean_reward": 0.3828125,
+      "mean_format_rewards": 0.87890625,
+      "avg_rewards": 0.3828125,
+      "gradient_norm": 0.40388184785842896,
+      "token_entropy": 0.07679694890975952,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 31,
+      "update": 31,
+      "loss": -0.002256398554891348,
+      "mean_reward": 0.2578125,
+      "mean_format_rewards": 0.87109375,
+      "avg_rewards": 0.2578125,
+      "gradient_norm": 0.34128454327583313,
+      "token_entropy": 0.10834617167711258,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 32,
+      "update": 32,
+      "loss": -0.007992314174771309,
+      "mean_reward": 0.37890625,
+      "mean_format_rewards": 0.890625,
+      "avg_rewards": 0.37890625,
+      "gradient_norm": 0.35509490966796875,
+      "token_entropy": 0.0851980522274971,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 33,
+      "update": 33,
+      "loss": -0.008844822645187378,
+      "mean_reward": 0.546875,
+      "mean_format_rewards": 0.95703125,
+      "avg_rewards": 0.546875,
+      "gradient_norm": 0.35691407322883606,
+      "token_entropy": 0.09216396510601044,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 34,
+      "update": 34,
+      "loss": -0.007700303569436073,
+      "mean_reward": 0.56640625,
+      "mean_format_rewards": 0.87890625,
+      "avg_rewards": 0.56640625,
+      "gradient_norm": 0.2956090569496155,
+      "token_entropy": 0.08252425491809845,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 35,
+      "update": 35,
+      "loss": -0.009360932745039463,
+      "mean_reward": 0.5,
+      "mean_format_rewards": 0.875,
+      "avg_rewards": 0.5,
+      "gradient_norm": 0.26256871223449707,
+      "token_entropy": 0.08433245122432709,
+      "active_fraction": 0.5
+    },
+    {
+      "rollout_step": 36,
+      "update": 36,
+      "loss": -0.009262864477932453,
+      "mean_reward": 0.5546875,
+      "mean_format_rewards": 0.921875,
+      "avg_rewards": 0.5546875,
+      "gradient_norm": 0.3599591553211212,
+      "token_entropy": 0.10641245543956757,
+      "active_fraction": 0.5
+    },
+    {
+      "rollout_step": 37,
+      "update": 37,
+      "loss": -0.0011772105935961008,
+      "mean_reward": 0.41796875,
+      "mean_format_rewards": 0.83984375,
+      "avg_rewards": 0.41796875,
+      "gradient_norm": 0.4168538451194763,
+      "token_entropy": 0.07449216395616531,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 38,
+      "update": 38,
+      "loss": -0.00938840676099062,
+      "mean_reward": 0.3671875,
+      "mean_format_rewards": 0.66015625,
+      "avg_rewards": 0.3671875,
+      "gradient_norm": 0.2770381271839142,
+      "token_entropy": 0.08910525590181351,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 39,
+      "update": 39,
+      "loss": -0.0033641690388321877,
+      "mean_reward": 0.53515625,
+      "mean_format_rewards": 0.95703125,
+      "avg_rewards": 0.53515625,
+      "gradient_norm": 0.22499142587184906,
+      "token_entropy": 0.09509511291980743,
+      "active_fraction": 0.3125
+    },
+    {
+      "rollout_step": 40,
+      "update": 40,
+      "loss": -0.012164589017629623,
+      "mean_reward": 0.46875,
+      "mean_format_rewards": 0.85546875,
+      "avg_rewards": 0.46875,
+      "gradient_norm": 0.46041545271873474,
+      "token_entropy": 0.09791698306798935,
+      "active_fraction": 0.8125
+    }
+  ],
+  "eval": [
+    {
+      "rollout_step": 0,
+      "update": 0,
+      "reward": 0.171875,
+      "format_reward": 0.55859375,
+      "response_length": 128.0
+    },
+    {
+      "rollout_step": 8,
+      "update": 8,
+      "reward": 0.27734375,
+      "format_reward": 0.55859375,
+      "response_length": 127.625
+    },
+    {
+      "rollout_step": 16,
+      "update": 16,
+      "reward": 0.328125,
+      "format_reward": 0.7265625,
+      "response_length": 128.0
+    },
+    {
+      "rollout_step": 24,
+      "update": 24,
+      "reward": 0.3671875,
+      "format_reward": 0.828125,
+      "response_length": 125.125
+    },
+    {
+      "rollout_step": 32,
+      "update": 32,
+      "reward": 0.328125,
+      "format_reward": 0.87109375,
+      "response_length": 122.25
+    },
+    {
+      "rollout_step": 40,
+      "update": 40,
+      "reward": 0.33203125,
+      "format_reward": 0.79296875,
+      "response_length": 127.375
+    }
+  ],
+  "rollouts": [
+    {
+      "stage": "before",
+      "examples": [
+        {
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+          "ground_truth": "18",
+          "response": " Janet has 64 total eggs because 3 + 4 = 7. She sells each egg for 2, so making 2 per egg at $1.37 per egg, Janet makes 7 * 2 * 1.37 = 18.34 over a month (7 days = 28 days, so she makes $309.88 out of 43 days). Then multiplying the number of ducks by the price per duck (7 * 8 = 56). So, she earns 56 * 1.834 = $11",
+          "length": 128,
+          "format_reward": 0.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        },
+        {
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "ground_truth": "3",
+          "response": " There are 2 bolts of blue fiber. Half of that much is 2 / 2 = 1 white bolt. So 2 + 1 = 3 bolts in total. </think> <answer> 3 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 1.0,
+          "reward": 1.0
+        },
+        {
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+          "ground_truth": "70000",
+          "response": " Original price of the house was $80,000. Then he had to put in $50,000 in house repairs. So we add those $50,000 to the original price ($80,000). That was the total cost for Josh: $80,000 + $50,000 = $130,000. The value of the house increased by 150%. 150% is the same as 1.5. So that means it became 1 + 1.5 = 2",
+          "length": 128,
+          "format_reward": 0.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "examples": [
+        {
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+          "ground_truth": "18",
+          "response": " Janet lays 16 eggs per day. She eats 3 eggs in the morning and bakes 4 eggs, so she sells 16 - 3 - 4 = 17 eggs per day. She sells each egg for $2, so she makes 17 * 2 = 34 dollars every day. The answer is 34. </think> <answer> 34 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        },
+        {
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "ground_truth": "3",
+          "response": " A robe takes 2 bolts of blue fiber. So the number of bolts of white fiber is 2 / 0.5 = 4 bolts. Therefore, the total number of bolts is 2 + 4 = 6. The answer is 6. </think> <answer> 6 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        },
+        {
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+          "ground_truth": "70000",
+          "response": " The value of the house after repairs is $80,000 + $50,000 = $130,000. The profit is $130,000 - $80,000 = $50,000. So the answer is 50000. </think> <answer> 50000 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 1262.9149749279022,
+  "checkpoint": {
+    "path": "checkpoints/02_lora_rank/grpo_lora_r16_seed0",
+    "kind": "adapter"
+  }
+}

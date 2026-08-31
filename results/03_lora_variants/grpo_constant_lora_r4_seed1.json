@@ -1,0 +1,476 @@
+{
+  "config": {
+    "experiment": "03_lora_variants",
+    "name": "grpo_constant_lora_r4_seed1",
+    "seed": 1,
+    "learning_rate": 0.0001,
+    "adapter": "lora",
+    "lora_rank": 4,
+    "lora_alpha": 8,
+    "lora_target_modules": "all-linear",
+    "prompt": "r1_zero_three_shot",
+    "baseline": "mean",
+    "advantage_normalizer": "std",
+    "loss_normalization": "constant",
+    "rollout_steps": 30,
+    "questions_per_rollout": 16,
+    "group_size": 16,
+    "max_tokens": 128,
+    "n_val": 256,
+    "rollout_generation_batch_size": 4,
+    "evaluation_batch_size": 8,
+    "model": "Qwen/Qwen2.5-0.5B",
+    "physical_gpu": 1,
+    "trainable_parameters": 2199552,
+    "total_parameters": 496232320,
+    "trainable_fraction": 0.004432504517239022
+  },
+  "hardware": "NVIDIA GeForce RTX 4090",
+  "train": [
+    {
+      "rollout_step": 1,
+      "update": 1,
+      "loss": -0.023552412167191505,
+      "mean_reward": 0.171875,
+      "mean_format_rewards": 0.62109375,
+      "avg_rewards": 0.171875,
+      "gradient_norm": 0.05409404635429382,
+      "token_entropy": 0.4575108289718628,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 2,
+      "update": 2,
+      "loss": -0.049774955958127975,
+      "mean_reward": 0.29296875,
+      "mean_format_rewards": 0.6015625,
+      "avg_rewards": 0.29296875,
+      "gradient_norm": 0.058505598455667496,
+      "token_entropy": 0.4995478391647339,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 3,
+      "update": 3,
+      "loss": -0.04124632850289345,
+      "mean_reward": 0.19921875,
+      "mean_format_rewards": 0.53515625,
+      "avg_rewards": 0.19921875,
+      "gradient_norm": 0.057539038360118866,
+      "token_entropy": 0.48041316866874695,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 4,
+      "update": 4,
+      "loss": -0.033175934106111526,
+      "mean_reward": 0.09375,
+      "mean_format_rewards": 0.44140625,
+      "avg_rewards": 0.09375,
+      "gradient_norm": 0.05923312157392502,
+      "token_entropy": 0.5378262996673584,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 5,
+      "update": 5,
+      "loss": -0.035406891256570816,
+      "mean_reward": 0.30859375,
+      "mean_format_rewards": 0.70703125,
+      "avg_rewards": 0.30859375,
+      "gradient_norm": 0.06641696393489838,
+      "token_entropy": 0.5106762647628784,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 6,
+      "update": 6,
+      "loss": -0.040705300867557526,
+      "mean_reward": 0.20703125,
+      "mean_format_rewards": 0.5625,
+      "avg_rewards": 0.20703125,
+      "gradient_norm": 0.057063642889261246,
+      "token_entropy": 0.47161078453063965,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 7,
+      "update": 7,
+      "loss": -0.031687941402196884,
+      "mean_reward": 0.2265625,
+      "mean_format_rewards": 0.578125,
+      "avg_rewards": 0.2265625,
+      "gradient_norm": 0.06093192473053932,
+      "token_entropy": 0.47945958375930786,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 8,
+      "update": 8,
+      "loss": -0.018396345898509026,
+      "mean_reward": 0.11328125,
+      "mean_format_rewards": 0.44921875,
+      "avg_rewards": 0.11328125,
+      "gradient_norm": 0.05061816796660423,
+      "token_entropy": 0.39647144079208374,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 9,
+      "update": 9,
+      "loss": -0.025849685072898865,
+      "mean_reward": 0.2109375,
+      "mean_format_rewards": 0.6484375,
+      "avg_rewards": 0.2109375,
+      "gradient_norm": 0.07713832706212997,
+      "token_entropy": 0.42555761337280273,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 10,
+      "update": 10,
+      "loss": -0.05510792136192322,
+      "mean_reward": 0.27734375,
+      "mean_format_rewards": 0.54296875,
+      "avg_rewards": 0.27734375,
+      "gradient_norm": 0.06421002000570297,
+      "token_entropy": 0.4335155189037323,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 11,
+      "update": 11,
+      "loss": -0.023959126323461533,
+      "mean_reward": 0.29296875,
+      "mean_format_rewards": 0.65625,
+      "avg_rewards": 0.29296875,
+      "gradient_norm": 0.060309384018182755,
+      "token_entropy": 0.39175140857696533,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 12,
+      "update": 12,
+      "loss": -0.0241301991045475,
+      "mean_reward": 0.12890625,
+      "mean_format_rewards": 0.4765625,
+      "avg_rewards": 0.12890625,
+      "gradient_norm": 0.05276402831077576,
+      "token_entropy": 0.3994178771972656,
+      "active_fraction": 0.5
+    },
+    {
+      "rollout_step": 13,
+      "update": 13,
+      "loss": -0.02362365461885929,
+      "mean_reward": 0.36328125,
+      "mean_format_rewards": 0.74609375,
+      "avg_rewards": 0.36328125,
+      "gradient_norm": 0.06475294381380081,
+      "token_entropy": 0.3617123067378998,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 14,
+      "update": 14,
+      "loss": -0.03496824949979782,
+      "mean_reward": 0.33984375,
+      "mean_format_rewards": 0.8046875,
+      "avg_rewards": 0.33984375,
+      "gradient_norm": 0.07426869124174118,
+      "token_entropy": 0.42404985427856445,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 15,
+      "update": 15,
+      "loss": -0.0139310322701931,
+      "mean_reward": 0.38671875,
+      "mean_format_rewards": 0.73828125,
+      "avg_rewards": 0.38671875,
+      "gradient_norm": 0.08135423809289932,
+      "token_entropy": 0.2962874174118042,
+      "active_fraction": 0.9375
+    },
+    {
+      "rollout_step": 16,
+      "update": 16,
+      "loss": -0.01124722883105278,
+      "mean_reward": 0.23046875,
+      "mean_format_rewards": 0.69921875,
+      "avg_rewards": 0.23046875,
+      "gradient_norm": 0.06883187592029572,
+      "token_entropy": 0.36688077449798584,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 17,
+      "update": 17,
+      "loss": -0.01383104920387268,
+      "mean_reward": 0.3515625,
+      "mean_format_rewards": 0.76171875,
+      "avg_rewards": 0.3515625,
+      "gradient_norm": 0.06877423822879791,
+      "token_entropy": 0.27065643668174744,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 18,
+      "update": 18,
+      "loss": -0.017283890396356583,
+      "mean_reward": 0.4453125,
+      "mean_format_rewards": 0.77734375,
+      "avg_rewards": 0.4453125,
+      "gradient_norm": 0.07613750547170639,
+      "token_entropy": 0.24681219458580017,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 19,
+      "update": 19,
+      "loss": -0.021471012383699417,
+      "mean_reward": 0.40234375,
+      "mean_format_rewards": 0.67578125,
+      "avg_rewards": 0.40234375,
+      "gradient_norm": 0.07221666723489761,
+      "token_entropy": 0.27323317527770996,
+      "active_fraction": 0.5625
+    },
+    {
+      "rollout_step": 20,
+      "update": 20,
+      "loss": -0.020884666591882706,
+      "mean_reward": 0.49609375,
+      "mean_format_rewards": 0.8359375,
+      "avg_rewards": 0.49609375,
+      "gradient_norm": 0.08533719927072525,
+      "token_entropy": 0.26438888907432556,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 21,
+      "update": 21,
+      "loss": -0.019793204963207245,
+      "mean_reward": 0.4296875,
+      "mean_format_rewards": 0.84375,
+      "avg_rewards": 0.4296875,
+      "gradient_norm": 0.08680344372987747,
+      "token_entropy": 0.2526668608188629,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 22,
+      "update": 22,
+      "loss": -0.020115254446864128,
+      "mean_reward": 0.4921875,
+      "mean_format_rewards": 0.8046875,
+      "avg_rewards": 0.4921875,
+      "gradient_norm": 0.08367356657981873,
+      "token_entropy": 0.2249414026737213,
+      "active_fraction": 0.875
+    },
+    {
+      "rollout_step": 23,
+      "update": 23,
+      "loss": -0.013297137804329395,
+      "mean_reward": 0.56640625,
+      "mean_format_rewards": 0.8671875,
+      "avg_rewards": 0.56640625,
+      "gradient_norm": 0.08205170929431915,
+      "token_entropy": 0.21972602605819702,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 24,
+      "update": 24,
+      "loss": -0.008675534278154373,
+      "mean_reward": 0.2265625,
+      "mean_format_rewards": 0.703125,
+      "avg_rewards": 0.2265625,
+      "gradient_norm": 0.09101253002882004,
+      "token_entropy": 0.2335507869720459,
+      "active_fraction": 0.625
+    },
+    {
+      "rollout_step": 25,
+      "update": 25,
+      "loss": -0.01488977950066328,
+      "mean_reward": 0.375,
+      "mean_format_rewards": 0.74609375,
+      "avg_rewards": 0.375,
+      "gradient_norm": 0.08549906313419342,
+      "token_entropy": 0.22001807391643524,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 26,
+      "update": 26,
+      "loss": -0.0054880306124687195,
+      "mean_reward": 0.42578125,
+      "mean_format_rewards": 0.875,
+      "avg_rewards": 0.42578125,
+      "gradient_norm": 0.10272522270679474,
+      "token_entropy": 0.21395601332187653,
+      "active_fraction": 0.8125
+    },
+    {
+      "rollout_step": 27,
+      "update": 27,
+      "loss": -0.012647152878344059,
+      "mean_reward": 0.29296875,
+      "mean_format_rewards": 0.75390625,
+      "avg_rewards": 0.29296875,
+      "gradient_norm": 0.09038965404033661,
+      "token_entropy": 0.1755892038345337,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 28,
+      "update": 28,
+      "loss": -0.008273685351014137,
+      "mean_reward": 0.46484375,
+      "mean_format_rewards": 0.79296875,
+      "avg_rewards": 0.46484375,
+      "gradient_norm": 0.09178002923727036,
+      "token_entropy": 0.18400625884532928,
+      "active_fraction": 0.75
+    },
+    {
+      "rollout_step": 29,
+      "update": 29,
+      "loss": -0.01119433157145977,
+      "mean_reward": 0.45703125,
+      "mean_format_rewards": 0.8203125,
+      "avg_rewards": 0.45703125,
+      "gradient_norm": 0.09157309681177139,
+      "token_entropy": 0.18072499334812164,
+      "active_fraction": 0.6875
+    },
+    {
+      "rollout_step": 30,
+      "update": 30,
+      "loss": -0.006204031407833099,
+      "mean_reward": 0.375,
+      "mean_format_rewards": 0.796875,
+      "avg_rewards": 0.375,
+      "gradient_norm": 0.09482136368751526,
+      "token_entropy": 0.1785714328289032,
+      "active_fraction": 0.6875
+    }
+  ],
+  "eval": [
+    {
+      "rollout_step": 0,
+      "update": 0,
+      "reward": 0.1484375,
+      "format_reward": 0.515625,
+      "response_length": 128.0
+    },
+    {
+      "rollout_step": 6,
+      "update": 6,
+      "reward": 0.14453125,
+      "format_reward": 0.53125,
+      "response_length": 128.0
+    },
+    {
+      "rollout_step": 12,
+      "update": 12,
+      "reward": 0.25,
+      "format_reward": 0.6875,
+      "response_length": 128.0
+    },
+    {
+      "rollout_step": 18,
+      "update": 18,
+      "reward": 0.24609375,
+      "format_reward": 0.71484375,
+      "response_length": 128.0
+    },
+    {
+      "rollout_step": 24,
+      "update": 24,
+      "reward": 0.3203125,
+      "format_reward": 0.75390625,
+      "response_length": 127.34375
+    },
+    {
+      "rollout_step": 30,
+      "update": 30,
+      "reward": 0.37109375,
+      "format_reward": 0.76171875,
+      "response_length": 127.46875
+    }
+  ],
+  "rollouts": [
+    {
+      "stage": "before",
+      "examples": [
+        {
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+          "ground_truth": "18",
+          "response": " She eats 3 breakfasts per day and bakes muffins 4 days a week, making 3 * 4 = 12 muffins for baking. There are 7 days in a week. So she has 7 - 3 - 4 = 0 days for breakfast after baking. And she sells three eggs per day for the remainder. So she sells 3 - 3 - 3 = 0 eggs a day. So she makes 2 * 0 = 0. So the answer is 0. </think> <answer> No income <0 /> </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        },
+        {
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "ground_truth": "3",
+          "response": " Out of 2 bolts of blue fiber, it takes 2 / 2 = 1 bolt of white fiber. So it takes a total of 2 + 1 = 3 bolts. </think> <answer> 3 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 1.0,
+          "reward": 1.0
+        },
+        {
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+          "ground_truth": "70000",
+          "response": " First we need to calculate the total price of the house after repairs, which is 80000 + 50000 = 130000. Then we need to calculate the 150% increase in value by multiplying the total price by the increase: 130000 * 1.5 = 195000. Finally, we subtract the initial purchase price to find the profit: 195000 - 80000 = 115000. So in total, Josh made a profit of ",
+          "length": 128,
+          "format_reward": 0.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        }
+      ]
+    },
+    {
+      "stage": "after",
+      "examples": [
+        {
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+          "ground_truth": "18",
+          "response": " Janet's ducks lay 16 * 2 = 32 eggs daily from the breakfast and the muffins. So she has 32 - 3 - 4 = 25 eggs daily. She makes 25 * 2 = $50 from selling the eggs. </think> <answer> 50 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        },
+        {
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "ground_truth": "3",
+          "response": " A robe takes 2 bolts of blue fiber, so it takes 2 * 2 = 4 bolts of white fiber. So in total, it takes 2 + 4 = 6 bolts. </think> <answer> 6 </answer>\n",
+          "length": 128,
+          "format_reward": 1.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        },
+        {
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+          "ground_truth": "70000",
+          "response": " The increase in the house's value is $80,000 + $50,000 = $130,000. This increase is 150% of $130,000, so it is 1.5 * $130,000 = $195,000. The profit is the original value of the house minus the increase in value, so it is $80,000 - $195,000 = -$115,000. </think> <answer> -",
+          "length": 128,
+          "format_reward": 0.0,
+          "answer_reward": 0.0,
+          "reward": 0.0
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 1111.0911877155304,
+  "checkpoint": {
+    "path": "checkpoints/03_lora_variants/grpo_constant_lora_r4_seed1",
+    "kind": "adapter"
+  }
+}
